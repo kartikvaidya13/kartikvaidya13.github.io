@@ -1,16 +1,19 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  header {
-    background: #0078d7;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-  }
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background: #0078d7;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the header stays above other content */
+}
   
   header h1 {
     margin: 0;
@@ -32,6 +35,27 @@ body {
     padding: 2rem;
   }
   
+
+
+  /* .container {
+    padding: 1rem;
+  } */
+  
+  .skill {
+    margin-bottom: 1rem;
+  }
+  
+  .progress-bar {
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background: #0078d7;
+    height: 20px;
+    border-radius: 5px;
+  }
   section {
     padding: 2rem 0;
     border-bottom: 1px solid #ddd;
@@ -56,9 +80,43 @@ body {
   }
   
   footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: #f4f4f4;
-    color: #333;
+      text-align: center;
+      padding: 1rem 0;
+      background: #f4f4f4;
+      color: #333;
   }
+
+  @media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+    }
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/* Add this to your CSS */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.active {
+    display: block;
+  }
+}
+
+
+  
   
