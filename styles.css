@@ -85,38 +85,5 @@ header {
       background: #f4f4f4;
       color: #333;
   }
-
-  @media (max-width: 768px) {
-    .project-card {
-        flex-direction: column;
-    }
-    nav ul {
-        display: block;
-        text-align: center;
-    }
-}
-
-
-/* Add this to your CSS */
-.menu-toggle {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-  }
-
-  nav {
-    display: none;
-  }
-
-  nav.active {
-    display: block;
-  }
-}
-
-
   
   
