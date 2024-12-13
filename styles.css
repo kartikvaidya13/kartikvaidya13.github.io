@@ -86,4 +86,18 @@ header {
       color: #333;
   }
   
-  
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+
+  .progress-bar {
+    width: 100%;
+  }
+}  
