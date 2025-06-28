@@ -34,20 +34,6 @@ header {
     margin: 0 auto;
     padding: 2rem;
   }
-  
-  
-  
-  /* .progress-bar {
-    background: #e0e0e0;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .progress {
-    background: #0078d7;
-    height: 20px;
-    border-radius: 5px;
-  } */
 
   section {
     padding: 2rem 0;
@@ -79,6 +65,39 @@ header {
       color: #333;
   }
   
+
+/* Skill Cards */ 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.skill-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #1f1f1f;
+}
+
+.skill-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   header nav a {
